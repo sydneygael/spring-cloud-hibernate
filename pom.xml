@@ -102,4 +102,7 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
+	<modules>
+		<module>eureka-server</module>
+	</modules>
 </project>
