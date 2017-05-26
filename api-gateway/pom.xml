@@ -6,25 +6,25 @@
 		<artifactId>spring-cloud-hibernate</artifactId>
 		<version>0.1</version>
 	</parent>
-	<artifactId>config-server</artifactId>
-	<name>config-server</name>
+	<artifactId>api-gateway</artifactId>
+	<name>api-gateway</name>
 
-	 <properties>
-        <docker.image.prefix>sydneygael</docker.image.prefix>
-    </properties>
+	<properties>
+		<docker.image.prefix>sydneygael</docker.image.prefix>
+	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-zuul</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-netflix-sidecar</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-config-server</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 	</dependencies>
 

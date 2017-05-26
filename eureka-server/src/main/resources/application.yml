@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: discovery
+    hostname: localhost #discovery on docker
 client:
     registerWithEureka: false
     fetchRegistry: false

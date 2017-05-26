@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: configserver
+    hostname: localhost #configserver on docker
   client:
     registerWithEureka: true
     fetchRegistry: true
